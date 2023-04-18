@@ -1,3 +1,3 @@
 # CryptoHack
 
-> This source code was contributed by me, hoangdiep and caoqui
+> These source codes was contributed by me, hoangdiep and caoqui
