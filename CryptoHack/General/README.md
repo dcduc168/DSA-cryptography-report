@@ -197,13 +197,11 @@ print(min(11 % 6, 8146798528947 % 17))
 
 #### Solution
 
-$$x^{p} \mod p = p $$
-
-$$x^{p-1} \mod p = 1$$
-
-$x = 273246787654$
-$p = 65537$
-Calculate $273246787654^{65536} \mod 65537 = x^{p-1} \mod p = 1$
+- $x^{p} \mod p = p $
+- $x^{p-1} \mod p = 1$
+- $x = 273246787654$
+- $p = 65537$
+- Calculate $273246787654^{65536} \mod 65537 = x^{p-1} \mod p = 1$
 
 ```python
 print(pow(273246787654,65536,65537))
@@ -213,10 +211,10 @@ print(pow(273246787654,65536,65537))
 
 #### Solution
 
-$a^{p-1} = 1 \mod p$
-$a^{p-1} * a^{-1} = a^{-1} \mod p$
-$a^{p-2} = a^{-1} \mod p$
-The inverse element = $a^{-1} = a^{p-2}$ % p
+- $a^{p-1} = 1 \mod p$
+- $a^{p-1} * a^{-1} = a^{-1} \mod p$
+- $a^{p-2} = a^{-1} \mod p$
+- The inverse element = $a^{-1} = a^{p-2}$ % p
 
 ```python
 a = 3
