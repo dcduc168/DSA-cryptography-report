@@ -1,4 +1,5 @@
 # Cryptography project
 
 > I did this project with hoangdiep and caoqui<br/>
-> And use the account `h0a9d13p` to solve all challenges in Cryptohack.
+> and I consulted the solution after solving each problem to give the best explanation.<br/>
+> To make it more convenient to write explanations, I write markdown files instead of word files. Hope you understand. Thank you!
