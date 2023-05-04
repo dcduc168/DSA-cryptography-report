@@ -30,18 +30,29 @@ string rot13Decrypt(string message)
 
 int main()
 {
-    // Nhập thông điệp cần mã hóa
+    char choice;
+    cout << "Encrypt(Press E) or Decrypt(Press D)\n";
+    cin >> choice;
+    cin.ignore();
     string message;
-    cout << "Nhap vao thong diep can ma hoa: ";
-    getline(cin, message);
+    if (choice == 'E')
+    {
+        // Nhập thông điệp cần mã hóa
+        cout << "Nhap vao thong diep can ma hoa: ";
+        getline(cin, message);
 
-    // Mã hóa thông điệp
-    string encrypted_message = rot13Encrypt(message);
-    cout << "Thong diep sau khi ma hoa: " << encrypted_message << endl;
+        // Mã hóa thông điệp
+        cout << "Thong diep sau khi ma hoa: " << rot13Encrypt(message) << '\n';
+    }
+    else
+    {
+        // Nhập thông điệp cần giải mã
+        cout << "Nhap vao thong diep can giai ma: ";
+        getline(cin, message);
 
-    // Giải mã thông điệp
-    string decrypted_message = rot13Decrypt(encrypted_message);
-    cout << "Thong diep sau khi giai ma: " << decrypted_message << endl;
+        // Giải mã thông điệp
+        cout << "Thong diep sau khi giai ma: " << rot13Decrypt(message) << '\n';
+    }
 
     return 0;
 }
